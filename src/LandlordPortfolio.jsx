@@ -3,8 +3,6 @@ import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { Building2, Smartphone, Database } from "lucide-react";
 import { motion } from "framer-motion";
-import logo from "./assets/logo.png";
-import heroBg from "./assets/hero.jpg";
 
 export default function LandlordPortfolio() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,11 +19,7 @@ export default function LandlordPortfolio() {
         <div className="flex items-center justify-between px-6 py-4">
           {/* Logo + Name */}
           <div className="flex items-center gap-2">
-            <img
-              src="/src/assets/logo.png"
-              alt="Frental Logo"
-              className="h-10"
-            />
+            <img src="/logo.png" alt="Frental Logo" className="h-10" />
             <span className="text-xl font-bold text-blue-700">Frental</span>
           </div>
 
@@ -92,7 +86,7 @@ export default function LandlordPortfolio() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/src/assets/hero1.jpg')" }}
+          style={{ backgroundImage: "url('/hero1.jpg')" }}
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
 
